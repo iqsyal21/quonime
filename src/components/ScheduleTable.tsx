@@ -7,6 +7,7 @@ interface Genre {
 
 interface scheduleTableProps {
   id: number;
+  url: string;
   image: any;
   title: string;
   aired: any;
@@ -17,6 +18,7 @@ interface scheduleTableProps {
 
 const ScheduleTable: React.FC<scheduleTableProps> = ({
   id,
+  url,
   image,
   title,
   aired,
@@ -28,9 +30,11 @@ const ScheduleTable: React.FC<scheduleTableProps> = ({
     <tr className="hover">
       <th>{id}</th>
       <td>
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src={image.webp.image_url} alt={title} /> <span className="lg:ml-8">{title}</span>
-        </div>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer">
+          <div className="flex flex-col lg:flex-row items-center">
+            <img src={image.webp.image_url} alt={title} /> <span className="lg:ml-8">{title}</span>
+          </div>
+        </a>
       </td>
       <td>{aired.string}</td>
       <td>{genres.map((genre) => genre.name).join(", ")}</td>

@@ -11,6 +11,7 @@ interface Genre {
 }
 
 export type schedule = {
+    url: string;
     mal_id: number,
     images: any;
     title: string;

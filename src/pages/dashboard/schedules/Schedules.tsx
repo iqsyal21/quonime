@@ -55,6 +55,7 @@ const Schedules = () => {
             {schedules.map((item: schedule, index) => (
               <ScheduleCard
                 key={index}
+                url={item.url}
                 image={item.images}
                 title={item.title}
                 aired={item.aired}
@@ -80,6 +81,7 @@ const Schedules = () => {
                   <ScheduleTable
                     key={index}
                     id={item.mal_id}
+                    url={item.url}
                     image={item.images}
                     title={item.title}
                     aired={item.aired}
