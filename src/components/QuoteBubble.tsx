@@ -8,7 +8,7 @@ interface quoteProps {
   character: string;
 }
 
-const QuoteBubble: React.FC<quoteProps> = ({ index, id, quote, anime, character }) => {
+const QuoteBubble: React.FC<quoteProps> = ({ index, quote, anime, character }) => {
   const getColorBubble = () => {
     const randomIndex = Math.floor(Math.random() * 5);
     const classNames = ["info", "success", "warning", "error", "accent"];

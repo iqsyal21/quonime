@@ -23,7 +23,7 @@ export const signIn = async (email: string, password: string) => {
 
 export const signUp = async (email: string, password: string) => {
     try {
-        const response = await axios.post(`${authUrl}/register`, {
+        await axios.post(`${authUrl}/register`, {
             email: email,
             password: password
         });
