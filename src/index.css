@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinFlowerLeft {
+  animation: spinLeft 2s linear infinite;
+}
+
+.spinFlowerRight {
+  animation: spinRight 2s linear infinite;
+}
+
+.swipeRegister {
+  animation: swipeIn 0.5s forwards;
+}
+
+.swipeLogin {
+  animation: swipeOut 0.5s forwards;
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swipeIn {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+
+@keyframes swipeOut {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
