@@ -33,7 +33,7 @@ const Login = () => {
     >
       <main className="m-auto py-8">
         {showToast && (
-          <div className="toast toast-top toast-end">
+          <div className="absolute z-10 toast toast-top toast-end">
             <div
               role="alert"
               className={`alert ${isResponseSuccess ? "alert-success" : "alert-error"}`}
