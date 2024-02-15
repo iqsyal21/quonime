@@ -13,7 +13,6 @@ import Search from "../pages/dashboard/quotes/Search";
 
 const routes = createRoutesFromElements(
   <>
-    <Route path="*" element={<NotFound />} />
     <Route path="/dashboard" element={<Layout />}>
       <Route index element={<Dashboard />} />
       <Route path="quotes" element={<Quotes />} />
@@ -24,6 +23,7 @@ const routes = createRoutesFromElements(
     </Route>
     <Route path="/login" element={<Login />} />
     <Route path="/" element={<Home />} />
+    <Route path="*" element={<NotFound />} />
   </>
 );
 
