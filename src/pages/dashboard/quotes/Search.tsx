@@ -70,10 +70,10 @@ const Search = () => {
             <h2 className="card-title">Get favorite quote</h2>
             <div className="flex justify-between mt-8 lg:mt-0">
               <button className="btn btn-outline btn-warning" onClick={() => navigate(-1)}>
-                Back
                 <span>
                   <MdArrowBack />
                 </span>
+                Back
               </button>
               <Link to="/dashboard/quotes/favorite">
                 <button className="btn btn-outline btn-info lg:mx-4">

@@ -46,10 +46,10 @@ const Favorites = () => {
             <h2 className="card-title">Get favorite quote</h2>
             <div className="flex justify-between mt-8 lg:mt-0">
               <button className="btn btn-outline btn-warning" onClick={() => navigate(-1)}>
-                Back
                 <span>
                   <MdArrowBack className="text-xl" />
                 </span>
+                Back
               </button>
               <Link to="/dashboard/quotes/search">
                 <button className="btn btn-outline btn-info lg:mx-4">
